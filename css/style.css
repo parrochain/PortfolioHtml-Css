@@ -12,21 +12,57 @@ html{
 body{
     font-family: 'PT Sans', sans-serif;
     background-color:#2f2f33;
-    line-height: 1.6;
+    line-height: 2.3rem;
     color: #fff;
+    font-size:1.2rem;
 }
+p{
+    margin-top: 0.8rem;
+    margin-bottom:0.8rem;
+}
+
 a{
     text-decoration: none;
     color:#fff;
 }
-
+img{
+    width:100%;
+}
 .center{
     margin:0, auto;
     text-align:center;
-    padding:0 3rem;
+    padding:0 2.5rem;
 }
 .section{
     padding:2rem 0;
+}
+.red{
+    color: #fc0000;
+}
+.cursive{
+    font-style: italic;
+}
+.no-margin{
+    margin:0;
+}
+/*Sections with background*/
+.pimg{
+    background: url(../img/background-homepage.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+    background-position:top;
+    background-size: cover;
+    position:relative;
+    height:200px;
+}
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    letter-spacing:8px;
+    color:#ffffff;
+    font-weight:600;
+    text-transform:uppercase;
 }
 
 /* Header */
@@ -34,6 +70,7 @@ a{
     background: url(../img/background-homepage.jpg); 
     background-size: cover;
     background-repeat:no-repeat;
+    background-attachment: fixed;
     width:100%;
     height:100vh;
     position:relative; 
@@ -43,11 +80,11 @@ a{
 header .menu{
     min-height: 2.5rem;
     width: 100%;
-    background-color: rgba(63, 60, 60, 0.5);
-    position: fixed;
-    padding: 0.5rem 1rem;  
+    background-color: rgba(63, 60, 60, 0.8);
+    position: fixed;  
     left:0;
     top:0;
+    z-index:999;
      
 }    
 header .logo{
@@ -57,13 +94,14 @@ header .logo{
     padding-right:1rem;
     padding-left: 3rem;
     color: white;
+    margin-top: 0.5rem;
 }
 header .higlight{
     color: #fc0000;
 }
 nav.navbar{
     float:right;
-    padding-top:0.7rem;
+    padding-top:0.5rem;
 }
 
 nav li{
@@ -88,6 +126,7 @@ nav a:hover{
 }
 section.section-main h3{
     font-size:1.8rem;
+    margin-bottom: 1.5rem;
 }
 section.section-main h1{
     font-size:3.2rem;
@@ -96,8 +135,66 @@ section.section-main h1{
 /*Button*/
 .fa-chevron-circle-down{
     font-size: 2rem;
+    margin-top: 2rem;
 }
 .fa-chevron-circle-down:hover{
-    color: rgba(87, 81, 81, 0.205);
+    color: rgba(63, 60, 60);
 }
-     
+
+/* About-me section*/
+#about-me img{
+    border-radius:150px;
+    margin:2rem auto;
+    height: auto;
+    max-width:360px;
+}
+#about-me .identity {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 25px;
+    text-align:left;
+}
+.about-me-text{
+   margin:auto;
+}
+
+/* My passion section*/
+#my-passion .blockchain{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:1.3rem;
+}
+.icon-grid{
+    font-size:70px;
+    width:100%;
+}
+.blockchain p{
+    padding: 0 0.5rem;
+}
+
+/*Skills section*/
+#skills .skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#skills .skill .icon-skills{
+    font-size: 6rem;
+}
+.icon-skills:hover{
+    color: crimson;
+}    
+    
+#skills .skill .positioning{
+    position:relative;
+    top:30px;
+}
+
+/*Contacts section*/
+ul.social {
+    list-style-type: none;
+}
+ul.social li{
+    display: inline;
+    font-size: 1.9rem;
+}
