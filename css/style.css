@@ -15,6 +15,7 @@ body{
     line-height: 2.3rem;
     color: #fff;
     font-size:1.2rem;
+    margin:auto;
 }
 p{
     margin-top: 0.8rem;
@@ -45,6 +46,10 @@ img{
 .no-margin{
     margin:0;
 }
+.no-padding-right{
+    padding-right:0;
+}
+
 /*Sections with background*/
 .pimg{
     background: url(../img/background-homepage.jpg);
@@ -57,7 +62,7 @@ img{
 }
 .ptext{
     position:absolute;
-    top:50%;
+    top:42%;
     width:100%;
     letter-spacing:8px;
     color:#ffffff;
@@ -85,7 +90,6 @@ header .menu{
     left:0;
     top:0;
     z-index:999;
-     
 }    
 header .logo{
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -102,6 +106,7 @@ header .higlight{
 nav.navbar{
     float:right;
     padding-top:0.5rem;
+    padding-right:3rem;
 }
 
 nav li{
@@ -130,6 +135,7 @@ section.section-main h3{
 }
 section.section-main h1{
     font-size:3.2rem;
+    line-height: 1.3;
 }
 
 /*Button*/
@@ -179,17 +185,13 @@ section.section-main h1{
     justify-content: space-around;
 }
 #skills .skill .icon-skills{
-    font-size: 6rem;
+    font-size: 5rem;
 }
+
 .icon-skills:hover{
     color: crimson;
 }    
     
-#skills .skill .positioning{
-    position:relative;
-    top:30px;
-}
-
 /*Contacts section*/
 ul.social {
     list-style-type: none;

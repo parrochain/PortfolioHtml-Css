@@ -1,0 +1,50 @@
+@media(max-width:733px){
+    header .logo,
+    nav.navbar{
+        float:none;
+        clear:both;
+        width:100%;
+        text-align: center;
+        padding-top:0;
+        padding-right:0;
+        padding-left:0;
+        line-height:1;
+    }
+    nav ul{
+        margin-bottom:5px;
+    }
+}
+
+@media(max-width:620px){
+    section.section-main h3 {
+       font-size: 1.5rem;
+       margin-bottom: 0.5rem;
+    }
+
+    section.section-main h1 {
+       font-size: 2.2rem;
+       line-height: 1.3;
+    }
+    .fa-chevron-circle-down {
+       font-size: 2rem;
+       margin-top: 1rem;
+    }
+    #about-me .identity{
+       display: grid;
+       grid-template-columns: 1fr;
+       text-align: left;
+    }
+    #about-me .img-about-me{
+        text-align: center;
+    }
+    #my-passion .blockchain {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.3rem;
+    }
+}    
+@media(max-width:459px){
+    nav li{
+        padding-right: 1rem;
+    }
+}
