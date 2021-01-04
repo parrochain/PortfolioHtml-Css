@@ -47,4 +47,8 @@
     nav li{
         padding-right: 1rem;
     }
+    nav a:hover{
+        font-size:1.1rem;
+        font-weight: inherit;
+    }
 }
